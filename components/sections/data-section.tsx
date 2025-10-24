@@ -1,8 +1,6 @@
 'use client'
 
 import { GitHubHeatmap } from '@/components/github-heatmap'
-import { SpotifyWidget } from '@/components/spotify-widget'
-import { WakaTimeWidget } from '@/components/wakatime-widget'
 import { LeetCodeWidget } from '@/components/leetcode-widget'
 
 export function DataSection() {
@@ -18,10 +16,8 @@ export function DataSection() {
         <GitHubHeatmap />
       </div>
 
-      {/* Other Widgets - Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <SpotifyWidget />
-        <WakaTimeWidget />
+      {/* LeetCode Widget - Full Width */}
+      <div className="mb-8">
         <LeetCodeWidget />
       </div>
     </section>

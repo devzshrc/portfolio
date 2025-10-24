@@ -71,48 +71,66 @@ export function LeetCodeWidget() {
   }
 
   return (
-    <div className="geometric-card">
-      <div className="flex items-center gap-2 mb-3">
-        <Target className="w-4 h-4" />
-        <h3 className="text-xl font-bold">LeetCode</h3>
+    <div className="geometric-card leetcode-widget">
+      <h3 className="text-xl font-bold mb-6">LeetCode Progress</h3>
+      
+      {/* Main Stats - Clean and Minimal */}
+      <div className="leetcode-main-stats">
+        <div className="total-solved">
+          <div className="total-number">{data.totalSolved}</div>
+          <div className="total-label">Problems Solved</div>
+        </div>
+        
+        {data.ranking && (
+          <div className="ranking-badge">
+            <Trophy className="w-4 h-4" />
+            <span>#{data.ranking.toLocaleString()}</span>
+          </div>
+        )}
       </div>
 
-      <div className="mb-4">
-        <div className="text-sm text-muted mb-1">Problems solved</div>
-        <div className="font-mono text-2xl flex items-center gap-2">
-          {data.totalSolved}
-          {data.ranking && (
-            <div className="flex items-center gap-1 text-sm text-muted">
-              <Trophy className="w-3 h-3" />
-              #{data.ranking.toLocaleString()}
-            </div>
-          )}
+      {/* Clean Progress Bar */}
+      <div className="leetcode-progress-section">
+        <div className="progress-header">
+          <span className="progress-title">Difficulty Distribution</span>
+        </div>
+        <div className="clean-progress-bar">
+          <div 
+            className="progress-fill easy" 
+            style={{ width: `${(data.easy / data.totalSolved) * 100}%` }}
+          ></div>
+          <div 
+            className="progress-fill medium" 
+            style={{ width: `${(data.medium / data.totalSolved) * 100}%` }}
+          ></div>
+          <div 
+            className="progress-fill hard" 
+            style={{ width: `${(data.hard / data.totalSolved) * 100}%` }}
+          ></div>
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-2">
-        <div className={`p-2 rounded border text-center ${getDifficultyColor('easy')}`}>
-          <div className="font-mono text-lg">{data.easy}</div>
-          <div className="text-xs">Easy</div>
+      {/* Minimal Difficulty Stats */}
+      <div className="difficulty-stats">
+        <div className="difficulty-item">
+          <span className="difficulty-dot easy"></span>
+          <span className="difficulty-name">Easy</span>
+          <span className="difficulty-count">{data.easy}</span>
         </div>
-        <div className={`p-2 rounded border text-center ${getDifficultyColor('medium')}`}>
-          <div className="font-mono text-lg">{data.medium}</div>
-          <div className="text-xs">Medium</div>
+        <div className="difficulty-item">
+          <span className="difficulty-dot medium"></span>
+          <span className="difficulty-name">Medium</span>
+          <span className="difficulty-count">{data.medium}</span>
         </div>
-        <div className={`p-2 rounded border text-center ${getDifficultyColor('hard')}`}>
-          <div className="font-mono text-lg">{data.hard}</div>
-          <div className="text-xs">Hard</div>
+        <div className="difficulty-item">
+          <span className="difficulty-dot hard"></span>
+          <span className="difficulty-name">Hard</span>
+          <span className="difficulty-count">{data.hard}</span>
         </div>
       </div>
 
       {data.error && (
-        <div className="text-xs text-muted mt-2">{data.error}</div>
-      )}
-
-      {data.username && (
-        <div className="text-xs text-muted mt-2">
-          Profile: {data.username}
-        </div>
+        <div className="error-message">{data.error}</div>
       )}
     </div>
   )

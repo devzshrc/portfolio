@@ -26,34 +26,28 @@ export function SkillsSection() {
 
       <MagazineTags tags={userData.skills.tags} />
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="geometric-card">
-          <div className="flex items-center gap-2 mb-4">
-            <div className="w-3 h-3 bg-black"></div>
-            <h3 className="text-xl font-bold">Skills</h3>
-          </div>
-          <ul className="space-y-3 text-muted stagger-animation">
+      {/* Compact Skills Layout */}
+      <div className="compact-skills-container">
+        <div className="skills-section">
+          <h3 className="skills-section-title">Core Skills</h3>
+          <div className="skills-compact-grid">
             {userData.skills.categories.skills.map((skill, index) => (
-              <li key={index} className="flex items-center gap-2">
-                <span className="w-1 h-1 bg-black rounded-full"></span>
+              <div key={index} className="skill-compact-item">
                 {skill}
-              </li>
+              </div>
             ))}
-          </ul>
-        </div>
-        <div className="geometric-card">
-          <div className="flex items-center gap-2 mb-4">
-            <div className="w-3 h-3 bg-black"></div>
-            <h3 className="text-xl font-bold">Technologies</h3>
           </div>
-          <ul className="space-y-3 text-muted">
+        </div>
+
+        <div className="skills-section">
+          <h3 className="skills-section-title">Technologies</h3>
+          <div className="skills-compact-grid">
             {userData.skills.categories.technologies.map((tech, index) => (
-              <li key={index} className="flex items-center gap-2">
-                <span className="w-1 h-1 bg-black rounded-full"></span>
+              <div key={index} className="skill-compact-item tech">
                 {tech}
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       </div>
     </section>
