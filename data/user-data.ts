@@ -4,9 +4,12 @@ export const userData = {
     name: 'Devashish',
     role: 'Full Stack Developer',
     location: 'Delhi, India',
+    phone: '+91-9140147107',
     email: 'de5ash1zh@gmail.com',
-    twitter: '@de5ash1zh',
-    github: 'github.com/devzshrc',
+    github: 'https://github.com/devzshrc',
+    linkedin: 'https://linkedin.com/in/devzshrc',
+    twitter: 'https://x.com/de5ash1zh',
+    portfolio: 'https://devzshrc.vercel.app',
     calUsername: 'de5ash1zh',
   },
 
@@ -14,17 +17,17 @@ export const userData = {
   hero: {
     category: 'FEATURED DEVELOPER',
     description:
-      'Building scalable, intelligent web applications powered by modern technologies and clean design. Explore my projects that merge code, creativity, and problem-solving.',
+      'Full Stack Developer specializing in building scalable, intelligent web applications with React, Node.js, and PostgreSQL. Focused on crafting secure, performant, and user-centered systems powered by clean design and modern AI integrations.',
   },
 
-  // About Section (Keep it short and crisp)
+  // About Section
   about: {
     title: 'About',
     subtitle: 'Turning ideas into interactive systems',
     description:
-      "I'm a full stack developer skilled in building end-to-end web applications using React, Node.js, and PostgreSQL. I’ve developed production-grade tools ranging from AI-powered assistants to modern S3 explorers and analytics dashboards.",
+      "I'm a full stack developer skilled in building end-to-end web applications using React, Node.js, and PostgreSQL. Experienced in authentication systems, REST APIs, and scalable deployments on AWS and Docker. I’ve developed 4+ production-ready tools, including an AI CLI assistant and a modern S3 file explorer.",
     philosophy:
-      'Software should not only function—it should empower. I focus on creating intuitive, performant, and secure experiences that scale seamlessly.',
+      'I believe great software should amplify human capability. My focus is on performance, clarity, and systems that scale gracefully from prototype to production.',
     stats: [
       { label: 'Years Experience', value: '2', unit: '+' },
       { label: 'Projects Completed', value: '5', unit: '+' },
@@ -37,65 +40,27 @@ export const userData = {
   projects: [
     {
       id: '1',
-      title: 'NutriSync – AI-Powered Nutrition App',
-      description:
-        'Developed a full-stack app that uses body metrics and food images to deliver personalized health insights. Features AI meal planner, calorie tracking, and a secure real-time dashboard.',
-      technologies: ['React', 'Node.js', 'Supabase', 'Gemini API'],
-      liveUrl: '',
-      githubUrl: 'https://github.com/devzshrc/nutrisync',
-      year: '2024',
-      type: 'Web Application',
-      duration: '4',
-      teamSize: '1',
-    },
-    {
-      id: '2',
       title: 'S3UI – Modern S3 File Explorer',
       description:
-        'Built a responsive web interface for AWS S3 bucket management with secure authentication and drag-and-drop uploads. Added real-time storage analytics and achieved 95% faster navigation compared to the AWS Console.',
+        'Developed a responsive web interface for managing AWS S3 buckets, achieving 95% faster navigation compared to the AWS Console. Implemented secure authentication, drag-and-drop uploads, and real-time analytics for monitoring storage usage.',
       technologies: ['React', 'AWS S3', 'Node.js', 'Tailwind CSS'],
-      liveUrl: '',
-      githubUrl: 'https://github.com/devzshrc/s3ui',
-      year: '2024',
+      liveUrl: 'https://s3ui.vercel.app',
+      githubUrl: '#',
+      year: '2025',
       type: 'Web Application',
       duration: '3',
       teamSize: '1',
     },
-    {
-      id: '3',
-      title: 'AI-Powered Custom CLI Cursor',
-      description:
-        'Command-line AI assistant that scaffolds code, debugs logic, writes documentation, and generates test cases from natural language prompts using OpenAI and Gemini APIs.',
-      technologies: ['Node.js', 'OpenAI API', 'Gemini API', 'TypeScript'],
-      liveUrl: '',
-      githubUrl: 'https://github.com/devzshrc/ai-cli-cursor',
-      year: '2024',
-      type: 'CLI Tool',
-      duration: '2',
-      teamSize: '1',
-    },
-    {
-      id: '4',
-      title: 'LeetLab – Leetcode System Design',
-      description:
-        'Full-stack coding practice platform with code execution via Dockerized Judge0 instance. Includes real-time editor, submission tracking, and community challenges.',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'Docker'],
-      liveUrl: '',
-      githubUrl: 'https://github.com/devzshrc/leetlab',
-      year: '2025',
-      type: 'Web Application',
-      duration: '5',
-      teamSize: '2',
-    },
+
     {
       id: '5',
       title: 'MonoHub Lookup – GitHub Profile Explorer',
       description:
-        'Minimal app to explore GitHub profiles and repositories using GitHub API with real-time data fetching, pagination, and smooth transitions.',
+        'Created a minimal web app to explore GitHub user profiles and repositories using the GitHub API. Implemented real-time data fetching, smooth UI transitions, pagination, and error handling for a seamless user experience.',
       technologies: ['React', 'Next.js', 'GitHub API', 'Tailwind CSS'],
-      liveUrl: '',
-      githubUrl: 'https://github.com/devzshrc/monohub-lookup',
-      year: '2024',
+      liveUrl: 'https://monohub.vercel.app',
+      githubUrl: '#',
+      year: '2025',
       type: 'Web Application',
       duration: '2',
       teamSize: '1',
@@ -109,11 +74,11 @@ export const userData = {
     categories: {
       skills: [
         'Full Stack Development',
-        'REST APIs',
-        'Database Design',
+        'REST API Design',
+        'Database Architecture',
         'Authentication Systems',
-        'Scalable Architecture',
-        'Responsive UI',
+        'Scalable Infrastructure',
+        'Responsive UI Engineering',
       ],
       technologies: [
         'React.js & Next.js',
@@ -128,6 +93,35 @@ export const userData = {
     },
     tags: ['Frontend', 'Backend', 'DevOps', 'Cloud', 'AI Integration'],
   },
+
+  // Experience
+  experience: [
+    {
+      company: 'Technophilia',
+      role: 'Full Stack Developer Intern',
+      duration: 'June 2024 – July 2024',
+      location: 'Remote',
+      description:
+        'Worked on backend development using Node.js, PostgreSQL, and Prisma ORM. Designed and optimized relational database schemas to improve query performance and scalability.',
+    },
+  ],
+
+  // Education
+  education: [
+    {
+      degree: 'Bachelor of Computer Science',
+      institution: 'Babasaheb Bhimrao Ambedkar University (BBAU), Lucknow',
+      cgpa: '7.5',
+      year: '2021 – 2025',
+    },
+  ],
+
+  // Activities
+  extracurricular: [
+    'Actively write technical and social media posts on X and LinkedIn, engaging a growing developer audience.',
+    'Participated in PW Skills Hackathon organized by the Government of Rajasthan.',
+    'Attended multiple technology conferences and developer summits.',
+  ],
 
   // Magazine Elements
   magazine: {
@@ -144,6 +138,8 @@ export const userData = {
     { id: 'about', label: 'About' },
     { id: 'data', label: 'Data' },
     { id: 'expertise', label: 'Skills' },
+    { id: 'experience', label: 'Experience' },
+    { id: 'education', label: 'Education' },
     { id: 'contact', label: 'Contact' },
   ],
 };
