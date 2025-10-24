@@ -41,7 +41,7 @@ export const userData = {
       description:
         'Developed a full-stack app that uses body metrics and food images to deliver personalized health insights. Features AI meal planner, calorie tracking, and a secure real-time dashboard.',
       technologies: ['React', 'Node.js', 'Supabase', 'Gemini API'],
-      liveUrl: 'https://your-nutrisync-demo-link.com',
+      liveUrl: '',
       githubUrl: 'https://github.com/devzshrc/nutrisync',
       year: '2024',
       type: 'Web Application',
@@ -54,7 +54,7 @@ export const userData = {
       description:
         'Built a responsive web interface for AWS S3 bucket management with secure authentication and drag-and-drop uploads. Added real-time storage analytics and achieved 95% faster navigation compared to the AWS Console.',
       technologies: ['React', 'AWS S3', 'Node.js', 'Tailwind CSS'],
-      liveUrl: 'https://your-s3ui-demo-link.com',
+      liveUrl: '',
       githubUrl: 'https://github.com/devzshrc/s3ui',
       year: '2024',
       type: 'Web Application',
@@ -93,7 +93,7 @@ export const userData = {
       description:
         'Minimal app to explore GitHub profiles and repositories using GitHub API with real-time data fetching, pagination, and smooth transitions.',
       technologies: ['React', 'Next.js', 'GitHub API', 'Tailwind CSS'],
-      liveUrl: 'https://your-monohub-demo-link.com',
+      liveUrl: '',
       githubUrl: 'https://github.com/devzshrc/monohub-lookup',
       year: '2024',
       type: 'Web Application',
