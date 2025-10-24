@@ -1,0 +1,5 @@
+export { WorkSection } from './work-section'
+export { AboutSection } from './about-section'
+export { SkillsSection } from './skills-section'
+export { DataSection } from './data-section'
+export { ContactSection } from './contact-section'
