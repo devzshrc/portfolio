@@ -1,11 +1,11 @@
-'use client'
+'use client';
 
-import { 
-  MagazineByline, 
+import {
+  MagazineByline,
   MagazineReadingTime,
-  MagazineTags
-} from '@/components/magazine-elements'
-import { userData } from '@/data/user-data'
+  MagazineTags,
+} from '@/components/magazine-elements';
+import { userData } from '@/data/user-data';
 
 export function SkillsSection() {
   return (
@@ -15,17 +15,17 @@ export function SkillsSection() {
         <div className="magazine-subtitle">{userData.skills.subtitle}</div>
       </div>
 
-      <div className="flex justify-between items-center mb-6">
-        <MagazineByline 
-          author="Technical Editor" 
-          date="Updated Oct 2025" 
-          readTime="2 min" 
+      {/* <div className="flex justify-between items-center mb-6">
+        <MagazineByline
+          author="Technical Editor"
+          date="Updated Oct 2025"
+          readTime="2 min"
         />
         <MagazineReadingTime minutes={2} />
-      </div>
+      </div> */}
 
       <MagazineTags tags={userData.skills.tags} />
-      
+
       {/* Compact Skills Layout */}
       <div className="compact-skills-container">
         <div className="skills-section">
@@ -51,5 +51,5 @@ export function SkillsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
