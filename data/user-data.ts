@@ -39,6 +39,27 @@ export const userData = {
   // Projects
   projects: [
     {
+      id: '2',
+      title: 'AI Code Reviewer – Intelligent Code Analysis Platform',
+      description:
+        'Built an AI-powered code review platform with real-time analysis capabilities, providing detailed feedback on code quality, security vulnerabilities, and performance optimization. Features a magazine-style dark mode interface with symmetrical layout and interactive grid backgrounds. Integrated Google Gemini AI for comprehensive code evaluation across multiple programming languages.',
+      technologies: [
+        'React',
+        'Google Gemini AI',
+        'Node.js',
+        'Express',
+        'Axios',
+        'Prism.js',
+        'Victor Mono',
+      ],
+      liveUrl: 'https://ai-kode-review.vercel.app',
+      githubUrl: 'https://github.com/devzshrc/ai-code-reviewer',
+      year: '2025',
+      type: 'Web Application',
+      duration: '2',
+      teamSize: '1',
+    },
+    {
       id: '1',
       title: 'S3UI – Modern S3 File Explorer',
       description:
