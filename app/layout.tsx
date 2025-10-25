@@ -6,9 +6,9 @@ import './globals.css';
 const victorMono = Victor_Mono({ subsets: ['latin'], variable: '--font-mono' });
 
 export const metadata: Metadata = {
-  title: 'Editorial Portfolio',
-  description: 'A minimalist, editorial-style personal portfolio',
-  generator: 'v0.app',
+  title: 'Devashish',
+  description: 'portfolio',
+  generator: 'dev',
 };
 
 export default function RootLayout({
