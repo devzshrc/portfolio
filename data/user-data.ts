@@ -39,7 +39,7 @@ export const userData = {
   // Projects
   projects: [
     {
-      id: '2',
+      id: '1',
       title: 'AI Code Reviewer – Intelligent Code Analysis Platform',
       description:
         'Built an AI-powered code review platform with real-time analysis capabilities, providing detailed feedback on code quality, security vulnerabilities, and performance optimization. Features a magazine-style dark mode interface with symmetrical layout and interactive grid backgrounds. Integrated Google Gemini AI for comprehensive code evaluation across multiple programming languages.',
@@ -58,35 +58,7 @@ export const userData = {
       type: 'Web Application',
       duration: '2',
       teamSize: '1',
-    },
-    {
-      id: '1',
-      title: 'S3UI – Modern S3 File Explorer',
-      description:
-        'Developed a responsive web interface for managing AWS S3 buckets, achieving 95% faster navigation compared to the AWS Console. Implemented secure authentication, drag-and-drop uploads, and real-time analytics for monitoring storage usage.',
-      technologies: ['React', 'AWS S3', 'Node.js', 'Tailwind CSS'],
-      liveUrl: 'https://s3ui.vercel.app',
-      githubUrl: '#',
-      year: '2025',
-      type: 'Web Application',
-      duration: '3',
-      teamSize: '1',
-    },
-
-    {
-      id: '5',
-      title: 'MonoHub Lookup – GitHub Profile Explorer',
-      description:
-        'Created a minimal web app to explore GitHub user profiles and repositories using the GitHub API. Implemented real-time data fetching, smooth UI transitions, pagination, and error handling for a seamless user experience.',
-      technologies: ['React', 'Next.js', 'GitHub API', 'Tailwind CSS'],
-      liveUrl: 'https://monohub.vercel.app',
-      githubUrl: '#',
-      year: '2025',
-      type: 'Web Application',
-      duration: '2',
-      teamSize: '1',
-    },
-  ],
+    },  ],
 
   // Skills
   skills: {
